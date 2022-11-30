@@ -1,14 +1,15 @@
 import mongoose,{Schema}from 'mongoose'
 
 interface todoInstance{
-    _id:string;
+// _id:string;
+    name:string;
     description:string;
-    status:boolean
+    status:string
 }
 const todoSchema =new Schema({
-    name:{type:String,},
-    description:{type:String, requird:true},
-    status:{type:Boolean},
+    name:{type:String},
+    description:{type:String},
+    status:{type:String}
 
 },{
     timestamps:true

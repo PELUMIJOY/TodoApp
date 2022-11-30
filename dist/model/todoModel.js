@@ -25,9 +25,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importStar(require("mongoose"));
 const todoSchema = new mongoose_1.Schema({
-    name: { type: String, },
-    description: { type: String, requird: true },
-    status: { type: Boolean },
+    name: { type: String },
+    description: { type: String },
+    status: { type: String }
 }, {
     timestamps: true
 });
